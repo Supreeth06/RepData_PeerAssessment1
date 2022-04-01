@@ -84,6 +84,7 @@ for(i in na_indices) {
   filled_data$steps[i] <- ave_steps[ave_steps$interval ==interval,]$steps
 }
 A histogram of the total steps per day with the filled in data: 
+![image](https://user-images.githubusercontent.com/99397259/161251425-fd5faed9-3561-4d9f-912a-0c2457f3efbd.png)
 
 Calculate the mean and medial total number of steps taken per day with the filled in data:
 

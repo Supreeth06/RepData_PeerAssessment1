@@ -44,6 +44,7 @@ Calculate the total steps taken per day:
 total_steps_per_day_with_available_data <- get_steps_per_day(available_data)
 A histogram of total steps taken per day:
 
+![image](https://user-images.githubusercontent.com/99397259/161252223-21ee1673-bc76-45d5-8201-73f41891c20d.png)
 
 
 Calculate the mean and median of the total steps taken per day:
@@ -56,6 +57,8 @@ What is the average daily activity pattern?
 Calculate the average steps taken per interval:
 
 average_steps_per_interval_with_available_data <- get_steps_per_interval(available_data)
+![image](https://user-images.githubusercontent.com/99397259/161252284-479c88e6-254c-4e2c-aaea-719aa5538759.png)
+
 A plot of the average steps taken per interval: 
 
 Find the interval that has the maximum average steps:
@@ -84,7 +87,7 @@ for(i in na_indices) {
   filled_data$steps[i] <- ave_steps[ave_steps$interval ==interval,]$steps
 }
 A histogram of the total steps per day with the filled in data: 
-![image](https://user-images.githubusercontent.com/99397259/161251425-fd5faed9-3561-4d9f-912a-0c2457f3efbd.png)
+![image](https://user-images.githubusercontent.com/99397259/161252384-17a767b3-e30e-440c-b2e6-1a61ed1ff711.png)
 
 Calculate the mean and medial total number of steps taken per day with the filled in data:
 
@@ -101,6 +104,5 @@ filled_data$type_of_day <-
   factor(filled_data$day_of_week %in% weekdays_list,
          levels = c(FALSE, TRUE),
          labels = c("weekend", "weekday"))
-A panel plot that compares steps taken during a weekend vs. a weekday: 
-![image](https://user-images.githubusercontent.com/99397259/161250892-ed1c75eb-3d30-4ac5-bb10-6553ff11e94d.png)
-
+A panel plot that compares steps taken during a weekend vs. a weekday:
+![image](https://user-images.githubusercontent.com/99397259/161252436-23947551-4ac1-4d23-9c9c-700678868265.png)
